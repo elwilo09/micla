@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contenido</title>
+
+	<!---Enlace de enlazar al css---->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<ul class="navbar">
+			<li><a href="../../index.html">Inicio</a></li>
+		</ul>
+
+		<div class="header-icons">
+			<a href="../nosotros/nosotros.html"><i class='bx bx-user'></i></a>
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+	</header>
+	<!---Este es solo el tema de la página---->
+	<section class="courses" id="courses">
+		<div class="center-text">
+			<h2>Archivos Adicionales</h2>
+		</div>
+	<!---Aquí empieza el contenido---->
+		<div class="courses-content">
+			<div class="row">
+				<img src="img/course1.png">
+				<div class="courses-text">
+					<h3>Documento 1</h3>
+					<h6>Documento de apoyo número 1</h6>
+					<a href="javascript:abrir1()"><button >Vamos al<span> documento!</span></button></a>
+				</div>
+			</div>
+
+			<div class="row">
+				<img src="img/course2.png">
+				<div class="courses-text">
+					<h3>Documento 2</h3>
+					<h6>Documento de apoyo número 2</h6>
+					<a href="javascript:abrir2()"><button >Vamos al<span> documento!</span></button></a>
+				</div>
+			</div>
+
+		<div class="ventana" id="ventana">
+				<embed src="docs/prog-1-21.pdf" type="application/pdf" width="99%" height="490px" />
+				<a href="javascript:cerrar1()" ><button >Cerrar<span> documento</span></button></a>
+			</div>
+		
+		  </div>
+		  <div class="ventana" id="ventana2">
+				<embed src="docs/prog-22-48.pdf" type="application/pdf" width="99%" height="490px" />
+				<a href="javascript:cerrar2()" ><button >Cierre<span> documento</span></button></a>
+			</div>
+		
+		</div>
+			
+		
+	</section>
+	<!---Enlace al js---->
+	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+		function abrir1(){
+			document.getElementById("ventana").style.display="block";
+		}
+
+		function cerrar1(){
+			document.getElementById("ventana").style.display="none";
+		}
+		
+		function abrir2(){
+			document.getElementById("ventana2").style.display="block";
+		}
+
+		function cerrar2(){
+			document.getElementById("ventana2").style.display="none";
+		}
+
+	</script>
+</body>
+</html>

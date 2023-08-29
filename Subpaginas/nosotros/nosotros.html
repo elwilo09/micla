@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+
+    <!-- biblioteca de JavaScript que crea controles deslizantes táctiles -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!--  Enlace de css el de toda la vida-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Fondos wapos-->
+    <script src="https://kit.fontawesome.com/5a99d1260f.js" crossorigin="anonymous"></script>
+
+    <style>
+        .slide-container {
+            position: relative;
+        }
+
+        .custom-button {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 30px;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            border: 2px solid rgb(255, 145, 0);
+            text-decoration: none;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            display: inline-block;
+            padding: 16px 30px;
+            font-size: var(--p-font);
+            font-weight: 700;
+            border-radius: 30px;
+        }
+
+
+        .swiper-pagination {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 70px;
+            z-index: 100;
+        }
+
+        .card-content {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="images/herrera.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Enrique Herrera</h2>
+                        <p class="description">Estudiante de Octavo Semestre Ordinario de la carrera de Pedagogía de las Ciencias Experimentales</p>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="images/abarca.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Darlyn Abarca</h2>
+                        <p class="description">Estudiante de Octavo Semestre Ordinario de la carrera de Pedagogía de las Ciencias Experimentales</p>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="images/chamba.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Franklin Chamba</h2>
+                        <p class="description">Primer especialista del proyecto de titulación y docente de la carrera de Pedagogía de las Ciencias Experimentales</p>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="images/tatiana.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Tatiana Acosta</h2>
+                        <p class="description">Segunda especialista del proyecto de titulación y docente de la carrera de Pedagogía de las Ciencias Experimentales</p>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="images/jorge.jpeg" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Jorge Delgado</h2>
+                        <p class="description">Tercer especialista del proyecto de titulación y docente de la carrera de Pedagogía de las Ciencias Experimentales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+
+    <a href="javascript:history.back()" class="custom-button">Regresar</a>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
